@@ -1,0 +1,319 @@
+﻿<!DOCTYPE html>
+<html>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body, html {
+    height: 100%;
+    color: #777;
+    line-height: 1.8;
+}
+
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* First image (Logo. Full height) */
+.bgimg-1 {
+    background-image: url('http://stories.plancanada.ca/wp-content/uploads/2014/03/201305-UGA-63-lpr.jpg');
+    min-height: 100%;
+}
+
+
+
+/* Third image (Contact) */
+.bgimg-3 {
+    background-image: url("http://lunapads.com/media/wysiwyg/infortis/ultimo/custom/landing/afripads-header-min.jpg");
+    min-height: 400px;
+}
+
+.w3-wide {letter-spacing: 0px;}
+.w3-hover-opacity {cursor: pointer;}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+    .bgimg-1, .bgimg-2, .bgimg-3 {
+        background-attachment: scroll;
+    }
+}
+</style>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar" id="myNavbar">
+    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+    <a href="#home" class="w3-bar-item w3-button">HOME</a>
+    <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> OUR MISSION</a>
+    <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-asterisk"></i> THE ISSUE</a>
+    <a href="#getmoving" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> GET MOVING</a>
+    <a href="#yourgifts" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-female"></i> YOUR GIFTS</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> SUPPORT US</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
+      <i class="fa fa-search"></i>
+    </a>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+    <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
+    <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">PORTFOLIO</a>
+    <a href="#getmoving" class="w3-bar-item w3-button" onclick="toggleFunction()">GET MOVING</a>
+    <a href="#yourgifts" class="w3-bar-item w3-button" onclick="toggleFunction()">YOUR GIFTS</a>
+    <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">SUPPORT US</a>
+    <a href="#" class="w3-bar-item w3-button">SEARCH</a>
+  </div>
+</div>
+
+<!-- First Parallax Image with Logo Text -->
+<div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+  <div class="w3-display-middle" style="white-space:nowrap;">
+    <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity"> PADPALS 
+  </div>
+</div>
+
+<!-- Container (About Section) -->
+<div class="w3-content w3-container w3-padding-64" id="about"> <br>
+  <h3 class="w3-center">ABOUT</h3>
+  <p class="w3-center"><em>"Dont be shy, take pride."</em></p>
+  
+<p class="w3-center"> PadPals was founded with the mission of providing safe sanitary products for women in underdeveloped areas while shaping a healthier generation.  </p> 
+ 
+<p class="w3-center">For every mile someone walks, runs, or bikes, we will donate one pad made out of 100% organically grown cotton to reduce plastic waste for the environment, and chemical damage to our skin. For every ten miles, we will send volunteers to one of the many middle schools in New York to educate students about the menstrual cycle, tips on hygienic practices, and attempt to decrease the stigma associated with women’s periods. For every fifteen miles, a dispensable station will be created and a pack of pads or tampons will be donated for use in public restrooms. As we recruit more volunteers, we will be able to expand our network and send them to places such as Africa, where females lack the proper education and items needed to protect themselves from infections and other unfortunate incidents. </p> 
+ 
+<p class="w3-center"> Women in underdeveloped areas are forced to repeatedly use leaves, old cloths, or toilet paper, often without clean water to rinse the menstrual blood off before having to use it again. This results in many infections that may arise due to bacteria that live in the blood. They are left helpless as they are shamed for undergoing a natural process of their body because people around them don’t understand their circumstances. We hope to offer women all over the world an equal opportunity to live an affordable, comfortable, and hygienic life.</p>
+
+<br>
+<div class="w3-content w3-container w3-padding-0" id="portfolio"> <br> 
+
+  <h3 class="w3-center w3-padding-16">STATISTICS</h3>
+
+<p class="w3-wide">Over 40% of girls in Ethiopia said they have missed schools because of menstruation. </p>
+  <div class="w3-light-grey">
+    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:40%">40%</div>
+  </div>
+  <p class="w3-wide">65% of girls in urban India use reusable coth, yet they are often
+washed without soap or clean water. </p>
+  <div class="w3-light-grey">
+    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:65%">65%</div>
+  </div>
+  <p class="w3-wide">71% of girls in India report having no knowledge of menstruation before their first period.</p>
+  <div class="w3-light-grey">
+<div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:71%">71%</div>
+</div>
+<p class="w3-wide">Nearly 86% of teachers said menstruation is still a taboo subject in Burkina Faso and Niger. </p>
+  <div class="w3-light-grey">
+    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:86%">86%</div>
+  </div>
+<p class="w3-wide">68% of the girls in Niger told that there were places where they were not allowed to go during menstruation. </p>
+  <div class="w3-light-grey">
+    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:68%">68%</div>
+  </div>
+    
+  <p class="w3-wide">70% of all reproductive diseases in India are caused by poor menstrual hygiene </p>
+  <div class="w3-light-grey">
+    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:70%">70%</div>
+</div> 
+
+  </div>
+
+
+</div>
+<div class="w3-content w3-container w3-padding-64" id="getmoving">
+
+<h3 class="w3-center w3-padding-16">GET MOVING</h3>
+
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main w3-content w3-padding" style="max-width:2000px;margin-top:50px;">
+
+  <!-- First Photo Grid-->
+  <div class="w3-row-padding w3-padding-30 w3-center" id="food">
+    <div class="w3-third">
+      <img src="http://img.aws.livestrongcdn.com/ls-article-image-400/cpi.studiod.com/www_livestrong_com/photos.demandstudios.com/getty/article/94/169/153173643_XS.jpg" alt="Sandwich" style="width:100%">
+      <h3>For Every Mile</h3>
+      <p>One pad will be donated to a woman in need</p>
+    </div>
+    <div class="w3-third">
+      <img src="https://greatist.com/sites/default/files/iStock_000068528761_Large.jpg" alt="Steak" style="width:100%">
+      <h3>For Every 10 Miles</h3>
+      <p>A menstruation class will be given</p>
+    </div>
+    <div class="w3-third">
+      <img src="https://www.visitscotland.com/cms-images/holidays/glentress-forest-family-mountain-bikers?size=sm" alt="Cherries" style="width:100%">
+      <h3>For Every 15 Miles </h3>
+      <p>A dispensable bin and a pack of pads will be donated to a public restroom</p>
+      
+    </div>
+    
+  </div>
+
+</div>
+<br>
+<br>
+<br>
+<br>
+
+<div class="w3-content w3-container w3-padding-64" id="yourgifts">
+<h3 class="w3-center">YOUR GIFTS</h3>
+<!-- The App Section -->
+<div class="w3-padding-64 w3-white">
+  <div class="w3-row-padding">
+    <div class="w3-col l0 m6">
+      <h1 class="w3-jumbo"><b>The App</b></h1>
+      <h1 class="w3-xxxlarge w3-text-green"><b>Why buy it?</b></h1>
+      <p><span class="w3-xlarge">Take photos like a pro.</span> You should buy this app because lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+        ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+      <button class="w3-button w3-light-grey w3-padding-large w3-section w3-hide-small" onclick="document.getElementById('download').style.display='block'">
+        <i class="fa fa-download"></i> Download Application
+      </button>
+      <p>Available for <i class="fa fa-android w3-xlarge w3-text-green"></i> <i class="fa fa-apple w3-xlarge"></i> <i class="fa fa-windows w3-xlarge w3-text-blue"></i></p>
+    </div>
+    <div class="w3-col l4 m6">
+      <img src="/w3images/img_app.jpg" class="w3-image w3-right w3-hide-small" width="335" height="471">
+      <div class="w3-center w3-hide-large w3-hide-medium">
+        <button class="w3-button w3-block w3-padding-large" onclick="document.getElementById('download').style.display='block'">
+          <i class="fa fa-download"></i> Download Application
+        </button>
+        <img src="https://i5.walmartimages.com/asr/d0d555eb-2b4a-43ab-b9e4-27d923cb1f45_1.ec88bb8ce1f5f6b84a349534c9564762.jpeg" class="w3-image w3-margin-top" width="400" height="471">
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Modal for full size images on click-->
+<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+  <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <img id="img01" class="w3-image">
+    <p id="caption" class="w3-opacity w3-large"></p>
+  </div>
+</div>
+
+<!-- Third Parallax Image with Portfolio Text -->
+<div class="bgimg-3 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+     <span class="w3-xxlarge w3-text-white w3-wide">CONTACT</span>
+  </div>
+</div>
+
+<!-- Container (Contact Section) -->
+<div class="w3-content w3-container w3-padding-64" id="contact">
+  <h3 class="w3-center">Your support will be greatly appreciated! </h3>
+	<h5 class="w3-center"> Help us by creating the app, spreading the word on social media or sponsoring us
+ 
+
+  <div class="w3-row w3-padding-32 w3-section">
+    <div class="w3-col m4 w3-container">
+      <!-- Add Google Maps -->
+      <div id="googleMap" class="w3-round-large w3-greyscale" style="width:100%;height:400px;"></div>
+    </div>
+    <div class="w3-col m8 w3-panel">
+      <div class="w3-large w3-margin-bottom">
+        <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> NY, US<br>
+        <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone: 9178608933, 9179626990<br>
+        <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: yfang4268@bths.edu, tlee9470@bths.edu<br>
+      </div>
+      <br> 
+      <form action="/action_page.php" target="_blank">
+        <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+          <div class="w3-half">
+            <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+          </div>
+          <div class="w3-half">
+            <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+          </div>
+        </div>
+        <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
+		<br> <br>
+        <button class="w3-button w3-black w3-right w3-section" type="submit">
+          <i class="fa fa-paper-plane"></i> SEND MESSAGE
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <div class="w3-xlarge w3-section">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </div>
+  
+</footer>
+ 
+<!-- Add Google Maps -->
+<script>
+function myMap()
+{
+  myCenter=new google.maps.LatLng(40.7128, 74.0059);
+  var mapOptions= {
+    center:myCenter,
+    zoom:12, scrollwheel: true, draggable: true,
+    mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+  var map=new google.maps.Map(document.getElementById("googleMap"),mapOptions);
+
+  var marker = new google.maps.Marker({
+    position: myCenter,
+  });
+  marker.setMap(map);
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+// Change style of navbar on scroll
+window.onscroll = function() {myFunction()};
+function myFunction() {
+    var navbar = document.getElementById("myNavbar");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "w3-bar" + " w3-card-2" + " w3-animate-top" + " w3-white";
+    } else {
+        navbar.className = navbar.className.replace(" w3-card-2 w3-animate-top w3-white", "");
+    }
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function toggleFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
+<!--
+To use this code on your website, get a free API key from Google.
+Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
+-->
+
+</body>
+</html>
+
